@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
+    <link rel="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800" rel="stylesheet">"
     <link rel="stylesheet" media="all" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
   </head>
   <body>
     <header class="header">
@@ -19,10 +23,10 @@
           </div>
           <div class="header__button">
               <button class="header__button__btn">
-                <a href="#">Live Chat</a>
+                Live Chat
               </button>
             <button class="header__button__btn">
-              <a href="#">Client Area</a>
+              Client Area
             </button>
           </div>
         </div>
@@ -47,24 +51,35 @@
             <li>
               <a href="#">About</a>
             </li>
-          </ul>>
+          </ul>
               <button class="nav__basket">
-                <a href="#">1
-                <img src="img/basked.png"></a>
+                1
+                <img src="img/basked.png">
               </button>
         </nav>
       </div>
     </section>
     <section class="intro">
       <div class="container">
-        <div class="intro__title">
-          <h1>WOW your users, with competent webhosting and more!</h1>
+        <h1>WOW your users, with competent webhosting and more!</h1>
+        <div class="intro__info">
           <div class="intro__search">
-            <input type="text" placeholder="Search for your perfect domain ...">
-            <button type="submit">
-              <p>.co.uk</p>
-               <i class="fa fa-angle-down" aria-hidden="true"></i>
-            </button>
+            <form action="select1.php" method=""></form>
+              <button class="intro__search__vector">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+              <input type="text" placeholder="Search for your perfect domain ...">
+              <div class="select_main">
+                 <p> .co.uk</p>
+                 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  <select name="version_pledge" id="calc_region_1">
+                    <option value="">Выберите вариант залога</option>
+                    <option value="1">Залог автомобиля</option>
+                    <option value="2">Залог недвижимости</option>
+                    <option value="3">Залог бизнеса</option>						
+                  </select>
+                </div>
+             </form>
           </div>
             <div class="intro__btn">
               <button class="intro__btn__button">
@@ -75,6 +90,120 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="evaluation">
+      <div class="container">
+        <div class="evaluation__star">
+          <p>Excellent</p>
+            <a href="#">
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+            <a href="#">
+                <i class="fa fa-star" aria-hidden="true"></i>
+              </a>
+          <p>9.3 out of 10</p>
+              <img src="img/trustpiliot.png">
+        </div>
+        <div class="evaluation__info">
+          <div class="evaluation__info__mail">
+            <a href="#">
+            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <p>E-Mail</p>
+          </a>
+          </div>
+          <div class="evaluation__info__chat">
+            <a href="#">
+            <i class="fa fa-comment-o" aria-hidden="true"></i>
+            <p>Chat</p>
+          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="prices">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-4">
+            <div class="prices__block">
+              <h2>Cloud Web Hosting</h2>
+              <h6>Perfect for small but busy Websites</h6>
+              <div class="prices__block__prace">
+                <p>prices from
+                <span class="gradient-text">1.99</span>/MOUNTH</p>
+              </div>
+              <ul>
+                <li>Up to 2 Sites</li>
+                <li>Fast SSD Disk Space</li>
+                <li>Unlimited Bandwidth</li>
+                <li>Free SSL Certificate</li>
+              </ul>
+              <button>Find out more
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="prices__block">
+              <h2>Business Hosting</h2>
+              <h6>The Powerhouse. Perfect for businesses of all sizees.</h6>
+              <div class="prices__block__prace">
+                <p>prices from
+                <span class="gradient-text">24.99</span>/MOUNTH</p>
+              </div>
+              <ul>
+                <li>Unlimited Hosted Sites</li>
+                <li>Up to 200 GB SSD Space</li>
+                <li>Full DDOS Protection</li>
+                <li>10 x 200 MB Mailboxes</li>
+              </ul>
+              <button>Find out more
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="col-xs-4">
+            <div class="prices__block">
+              <h2>VPS</h2>
+              <h6>Secure and reliable. Suited for all data-conscious users.</h6>
+              <div class="prices__block__prace">
+                <p>prices from
+                <span class="gradient-text">3.99</span>/MOUNTH</p>
+              </div>
+              <ul>
+                <li>Unlimited Hosted Sites</li>
+                <li>Up to 200 GB SSD Space</li>
+                <li>Full DDOS Protection</li>
+                <li>10 x 200 MB Mailboxes</li>
+              </ul>
+              <button>Find out more
+                  <i class="fa fa-angle-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="prices__block__fore">
+          <div class="prices__pr">
+            <h6>Automated Content Management</h6>
+            <h2>Fully Managed Wordpress</h2>
+          </div>
+          <div class="prices__block__pr">
+              <p>prices from
+              <span class="gradient-text">4.89</span>/MOUNTH</p>
+            </div>
+            <button>Find out more
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </button>
         </div>
       </div>
     </section>
