@@ -15,7 +15,7 @@ header {
     display: flex;
     border: none;
 }
-.header__start {
+.header__content {
     display: flex;
     justify-content: space-between;
     padding-left: 30px;
@@ -29,12 +29,12 @@ header {
     align-items: center;
     padding-right: 25px;
 }
-.header__button__btn:first-child {
+.header__button button:first-child {
     margin-right: 25px;
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
     color: #ffffff;
 }
-.header__button__btn {
+.header__button button {
     border-radius: 59px;
     padding: 10px 20px;
     background-color: #e6eaf8;
@@ -43,7 +43,7 @@ header {
     font-size: 20px; 
     color: #003049; 
 }
-.header__button__btn:hover {
+.header__button button:hover {
     color: #ffffff;
     background: linear-gradient(to top left, #ff4b2b, #ff4268)
 }
@@ -97,6 +97,7 @@ header {
 	background-image: url("../img/background.png");
     background-color: #0b3456;
     background-repeat: no-repeat;
+    position: relative;
 }
 .intro h1 {
     width: 80%;
@@ -242,9 +243,10 @@ header {
     padding: 50px 25px 35px;
     background-color: #e6eaf8;
     position: fixed;
-    top: 336px;
+    top: 50%;
+    transform: translate(0, -50%);
+    z-index: 10;
     right: 0;
-    z-index: 2;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: 0 0 5px 2px rgba(122,122,122,0.5);
@@ -625,8 +627,6 @@ header {
 }
 .footer {
     background: #0b3456;
-    align-items: center;
-    display: flex;
     border: none;
     position: relative;
     overflow: hidden;
@@ -732,13 +732,15 @@ header {
     padding-bottom: 65px;
 }
 .footer__end {
-    padding: 35px 0 35px 75px;
+    padding: 35px 0 35px;
     background-color: #0d3a5f;
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
+}
+.footer__end__content{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .footer__discount {
     background-color: #ff435d;
