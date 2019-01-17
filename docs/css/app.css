@@ -358,6 +358,13 @@ header {
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
+    width: 240px;
+}
+@media(max-width:1040px){
+    .prices__block button {
+        width: 190px;
+        padding: 10px 20px;
+    }
 }
 .prices__block i {
     font-size: 17px;
@@ -433,10 +440,11 @@ header {
     justify-content: space-between;
     margin-left: 55px;
     align-items: center;
+    width: 240px;
 }
 @media(max-width: 1040px) {
     .prices__fore button {
-    padding: 5px 20px 5px 20px;
+    padding: 10px 20px 10px 20px;
     margin-left: 15px;
     }
 }
