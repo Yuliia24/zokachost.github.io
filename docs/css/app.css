@@ -279,6 +279,13 @@ header {
     position: relative;
     margin: 0 9px;
     min-height: 46px;
+    height: 100%;
+    box-sizing: border-box;
+}
+@media(max-width: 1040px){
+    .prices__block {
+        padding: 20px 15px;
+    }
 }
 .prices__block img {
     position: absolute;
@@ -559,13 +566,21 @@ header {
 }
 .comment {
     background-color: #073459;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 50px;
 }
-.comment__container {
-    text-align: center;
+.comment-container {
     padding-top: 80px;
-    
+    max-width: 600px;
+    overflow: visible;
 }
-.comment__container h2 {
+.comment__title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.comment__title h2 {
     color: #ffffff;
     font-size: 50px;
     font-weight: 700;

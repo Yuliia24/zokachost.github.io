@@ -30,9 +30,8 @@ var swiper = new Swiper('.system-container', {
   });
 
   var swiper = new Swiper('.comment-container', {
-	slidesPerView: 3,
+	slidesPerView: 1,
 	spaceBetween: 30,
-	slidesPerGroup: 3,
 	loop: true,
 	loopFillGroupWithBlank: true,
 	pagination: {
