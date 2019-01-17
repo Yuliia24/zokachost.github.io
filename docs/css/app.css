@@ -88,10 +88,6 @@ header {
 }
 .intro {
 	height: 620px;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
 	display: flex;
 	align-items: center;
 	background-image: url("../img/background.png");
@@ -184,25 +180,25 @@ header {
     display: flex;
     
 }
-.intro__btn__button p {
+.intro__btn p {
     color: #ffffff;
     font-weight: 700;
     font-size: 20px;
     padding: 15px 0;
 }
-.intro__btn__button:first-child {
+.intro__btn button:first-child {
     background: linear-gradient(to top left, #ff4b2b, #ff4268)
 }
-.intro__btn__button {
+.intro__btn button {
     background-color: #0b3456;
     border-radius: 59px;
     margin-top: 75px;
     border: none;
 }
-.intro__btn__button:hover {
+.intro__btn button:hover {
     background: linear-gradient(to top left, #ff4b2b, #ff4268)
 }
-.intro__btn__button:first-child {
+.intro__btn button:first-child {
     padding-right: 90px;
     padding-left: 30px;
     margin-right: 10px;
@@ -337,12 +333,12 @@ header {
     background-color: #0b3456;
     color: #e6eaf8;
 }
-.prices__block__prace {
+.prices__block__money {
     border-top: 1px solid #f1f3fc;
     border-bottom: 1px solid #f1f3fc;
     padding: 30px 0 40px;
 }
-.prices__block__prace p {
+.prices__block__money p {
     color: #9ea1a3;
     font-size: 17px;
     font-weight: 700;
@@ -358,24 +354,25 @@ header {
     color: #0B2349;
     display: inline;
   }
-.prices__block__fore {
+.prices__fore {
     background-color: #ffffff;
     border-radius: 10px;
     display: flex;
     align-items: center;
     margin: 35px 6px 0;
+    padding: 40px 60px 40px 55px;
 }
-.prices__block__fore h6 {
+.prices__fore h6 {
     color: #ff4456;
     font-size: 17px;
     font-weight: 700;
 }
-.prices__block__fore h2 {
+.prices__fore h2 {
     color: #0b3456;
     font-size: 30px;
     font-weight: 700;
 }
-.prices__block__fore button {
+.prices__fore button {
     background-color: #e6eaf8;
     color: #0b3456;
     font-size: 17px;
@@ -386,30 +383,30 @@ header {
     margin: 0 50px 0 55px;
     
 }
-.prices__block__fore i {
+.prices__fore i {
     padding-left: 55px;
     font-size: 17px;
     font-weight: 700;
 }
-.prices__block__fore button:hover {
+.prices__fore button:hover {
     background-color: #0b3456;
     color: #e6eaf8;
 }
-.prices__block__pr {
+.prices__fore__money {
     border-left: 1px solid #f1f3fc;
     border-right: 1px solid #f1f3fc;
     padding: 0 7px;
 }
-.prices__block__pr p {
+.prices__fore__money p {
     color: #9ea1a3;
     font-size: 17px;
     font-weight: 700;
     padding: 0 60px 0 45px;
     display: table-caption;
 }
-.prices__pr {
+.prices__fore__text {
     display: inline;
-    padding: 40px 60px 40px 55px;
+    
 }
 .eye {
     height: 125px;
@@ -434,22 +431,22 @@ header {
     color: #ffffff;
     padding-left: 25px;
 }
-.why {
+.about {
     background-color: #e1e6ec;
     padding-top: 115px;
     padding-bottom: 80px;
     text-align: center;
 }
-.why__title {
+.about__title {
     color: #0b3456;
     font-size: 40px;
     font-weight: 700;
     justify-content: center;
 }
-.why__container {
+.about__container {
     margin-top: 50px;
 }
-.why__block {
+.about__block {
     background-color: #f0f3f5;
     display: flex;
     align-items: center;
@@ -459,22 +456,22 @@ header {
     padding: 0 55px;
     margin: 20px 15px;
 }
-.why__block a {
+.about__block a {
     text-decoration: none;
 }
-.why__block h6 {
+.about__block h6 {
     font-size: 20px;
     font-weight: 700;
     color: #0b3456;
     padding: 30px 0 20px;
 }
-.why__block p {
+.about__block p {
     font-size: 16px;
     color: #7d7d7d;
     font-weight: 700;
     position: relative;
 }
-.why button {
+.about button {
     margin-top: 75px;
     border: none;
     padding: 10px 30px;
@@ -484,18 +481,22 @@ header {
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
     border-radius: 30px;
 }
-.why__block:hover {
+.about__block:hover {
     background-color: #0b3456;
 }
-.why__block:hover h6 {
+.about__block:hover h6 {
     color: #ffffff;
 }
 .system {
     padding: 120px 0;
+    position: relative;
 }
 .system__block {
     margin-right: 35px;
     min-height: 510px;
+}
+.system__block img {
+    width: 100%;
 }
 .system__block h2 {
     color: #ff4456;
@@ -522,7 +523,7 @@ header {
     position: relative;
     top: -28px;
 }
-.system__btn__button i {
+.system__btn i {
     font-size: 18px;
     color: #ff464b;
 }
@@ -530,48 +531,46 @@ header {
     display: flex;
     
 }
-.system__btn__button p {
+.system__btn p {
     color: #ffffff;
     font-weight: 700;
     font-size: 18px;
     padding: 10px 25px;
     display: inline-block;
 }
-.system__btn__button:last-child p {
+.system__btn button:last-child p {
     color: #0b3456;
 }
-.system__btn__button:first-child {
+.system__btn button:first-child {
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
 }
-.system__btn__button {
+.system__btn button {
     background-color: #ffffff;
     border-radius: 59px;
     margin-top: 45px;
     border: none;
 }
-.system__btn__button:last-child {
+.system__btn button:last-child {
     margin-left: 10px;
 }
-.system__btn__button:hover {
+.system__btn button:hover {
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
+    color: #ffffff;
 }
-.system__btn__button:hover p {
-     color: #ffffff;
-}
-.testimonials {
+.comment {
     background-color: #073459;
 }
-.testimonials__block {
+.comment__container {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 85px;
 }
-.testimonials__block h2 {
+.comment__container h2 {
     color: #ffffff;
     font-size: 50px;
     font-weight: 700;
 }
-.testimonials__block__user {
+.comment__container__user {
     background-color: #ffffff;
     margin-top: 90px;
     text-align: left;
@@ -579,13 +578,13 @@ header {
     padding: 45px 0 65px 50px;
     border-radius: 13px;
 }
-.testimonials__block__user h6 {
+.comment__container__user h6 {
     color: #575d61;
     font-size: 20px;
     font-weight: 700;
     padding-bottom: 15px;
 }
-.testimonials__block__user i {
+.comment__container__user i {
     height: 20px;
     width: 20px;
     color: #e6eaf8;
@@ -594,16 +593,16 @@ header {
     margin: 0 0,5;
     text-align: center;
 }
-.testimonials__block__comment {
+.comment__container__text {
     display: flex;
     padding-top: 35px;
 }
-.testimonials__block__comment p {
+.comment__container__text p {
     color: #404e6a;
     font-size: 17px;
     font-weight: 700;
 }
-.testimonials__block__comment i {
+.comment__container__text i {
     color: #f93e43;
     font-size: 17px;
     background-color: #fff;
@@ -631,25 +630,23 @@ header {
     position: relative;
     overflow: hidden;
 }
-.footer__start {
+.footer__logo {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     padding-bottom: 95px;
     padding-top: 30px;
 }
-.footer__logo {
-    align-items: center;
-}
 .footer__button {
     display: flex;
     align-items: center;
 }
-.footer__button__btn:first-child {
+.footer__button button:first-child {
     margin-right: 25px;
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
     color: #ffffff;
 }
-.footer__button__btn {
+.footer__button button {
     border-radius: 59px;
     padding: 10px 20px;
     background-color: #e6eaf8;
@@ -658,7 +655,7 @@ header {
     font-size: 20px; 
     color: #003049; 
 }
-.footer__button__btn:hover {
+.footer__button button:hover {
     color: #ffffff;
     background: linear-gradient(to top left, #ff4b2b, #ff4268);
 }
@@ -728,17 +725,17 @@ header {
     padding: 5px 13px;
     border-radius: 10px;
 }
-.footer__information {
+.footer__sitemap {
     padding-bottom: 65px;
 }
-.footer__end {
+.footer__data {
     padding: 35px 0 35px;
     background-color: #0d3a5f;
     color: #ffffff;
     font-size: 18px;
     font-weight: 700;
 }
-.footer__end__content{
+.footer__data__content{
     display: flex;
     justify-content: space-between;
 }

@@ -14,3 +14,33 @@ var swiper = new Swiper('.intro-swiper', {
 		prevEl: '.swiper-intro-prev',
 	},
 });
+
+var swiper = new Swiper('.system-container', {
+	slidesPerView: 1,
+	spaceBetween: 50,
+	loop: true,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  });
+
+  var swiper = new Swiper('.comment-container', {
+	slidesPerView: 3,
+	spaceBetween: 30,
+	slidesPerGroup: 3,
+	loop: true,
+	loopFillGroupWithBlank: true,
+	pagination: {
+	  el: '.swiper-pagination',
+	  clickable: true,
+	},
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  });
