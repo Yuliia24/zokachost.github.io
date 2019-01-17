@@ -505,6 +505,14 @@ header {
 .system__block img {
     width: 100%;
 }
+@media(max-width: 1040px){
+    .system__block img{
+        max-width: 400px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
 .system__block h2 {
     color: #ff4456;
     font-size: 28px;
