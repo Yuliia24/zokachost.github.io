@@ -42,4 +42,16 @@ var swiper = new Swiper('.system-container', {
 	  nextEl: '.swiper-button-next',
 	  prevEl: '.swiper-button-prev',
 	},
-  });
+	});
+	
+
+
+//pop-up
+$('.open__menu').on('click', function(){
+	$('.pop-up').addClass('active');
+	$('.pop-up__bg').fadeIn();
+});
+$('.pop-up__bg').on('click', function(){
+	$('.pop-up').removeClass('active');
+	$('.pop-up__bg').fadeOut();
+});
