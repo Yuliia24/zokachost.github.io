@@ -20,6 +20,9 @@ header {
     header {
         height: 80px;
     }
+    .container{
+        padding: 0 15px;
+    }
 }
 .open__menu{
     position: absolute;
