@@ -422,7 +422,7 @@ header {
 .rating__star__text p:last-child {
      margin-left: 35px;
 }
-,.rating__star__mark {
+.rating__star__mark {
     display: flex; 
     justify-content: center; 
 }
