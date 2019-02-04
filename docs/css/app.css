@@ -24,17 +24,40 @@ header {
         padding: 0 15px;
     }
 }
+
 .swiper-button-next {
     background: none;
+    right: 65px;
+    left: auto;
+}
+@media(max-width: 1300px) {
+    .swiper-button-next {
+        right: 10px;
+        left: auto;
+    }
+    .intro__slide {
+    padding: 0 50px;
+    }
+}
+
+@media(max-width: 767px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
+}
+.swiper-button-disabled  {
+    opacity: 0.95 !important;
 }
 .swiper-button-prev {
     background: none;
+    left: 65px;
+    right: auto;
 }
-.swiper-system-next {
-    background: none;
-}
-.swiper-system-prev {
-    background: none;
+@media(max-width: 1300px) {
+     .swiper-button-prev {
+        left: 10px;
+       right: auto;
+    }
 }
 .swiper-pagination {
     text-align: center;
@@ -259,6 +282,7 @@ header {
     position: relative;
     display: flex;
     border: none;
+    flex: 1;
 }
 @media(max-width: 767px){
     .intro__search input {
@@ -267,15 +291,18 @@ header {
     }
 }
 .select_main{
-    margin: 3px 10px;
+    margin-right: 10px;
     position: relative;
-    padding-top: 12px;
     border-top:1px solid #999a9a;
     border-bottom:1px solid #0b3456;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 23px;
-    background: #0b3456
+    background: #0b3456;
+    width: 165px;
+    height: 50px;
+    display: flex;
+    align-items: center;
     }
     @media(max-width: 767px){
         .select_main {
@@ -294,22 +321,13 @@ header {
     filter: alpha(opacity=0);
     }
     .select_main p {
-    width: 100%;
-    height: 100%; 
-    position: absolute; 
-    left: 0; 
-    top: 5px; 
     color: #ffffff; 
     font-size: 20px; 
     font-weight: 700;
-    line-height: 34px; 
-    overflow: hidden;
-    text-align: center;
     }
     @media(max-width: 767px){
         .select_main p {
             font-size: 15px;
-            line-height: 25px;
         }
     }
 .intro__search__vector {
@@ -824,6 +842,9 @@ header {
 .system {
     padding: 120px 0;
     position: relative;
+}
+.system .swiper-slide .row {
+    padding: 0 50px;
 }
 @media(max-width: 1040px){
     .system {

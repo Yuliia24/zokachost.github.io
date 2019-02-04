@@ -20,12 +20,12 @@ var swiper = new Swiper('.system-container', {
 	spaceBetween: 50,
 	loop: true,
 	pagination: {
-	  el: '.swiper-pagination',
+	  el: '.swiper-system',
 	  clickable: true,
 	},
 	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
+	  nextEl: '.swiper-system-next',
+	  prevEl: '.swiper-system-prev',
 	},
   });
 
@@ -35,12 +35,8 @@ var swiper = new Swiper('.system-container', {
 	loop: true,
 	loopFillGroupWithBlank: true,
 	pagination: {
-	  el: '.swiper-pagination',
+	  el: '.swiper-comment',
 	  clickable: true,
-	},
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
 	},
 	});
 	
